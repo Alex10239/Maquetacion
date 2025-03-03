@@ -1,0 +1,150 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación Web</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: #444;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        #contenedor {
+            width: 960px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #222;
+            padding: 20px;
+        }
+
+        header {
+            height: 150px;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        ul.menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.menu li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            background: #333;
+            border-radius: 5px;
+        }
+
+        ul.menu li a:hover {
+            background: #ef8354;
+        }
+
+        #contenido {
+            width: 700px;
+            height: 500px;
+            float: left;
+            background: rgb(255, 0, 0);
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #contenido p {
+            font-size: 20px;
+            height: 100px;
+            padding: 10px;
+        }
+
+        aside {
+            width: 250px;
+            height: 500px;
+            background: rgb(0, 0, 0);
+            margin-top: 10px;
+            float: right;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        aside img {
+            width: 100%;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #000;
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        footer h2 {
+            font-size: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Mi Página Web</h1>
+        </header>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li> 
+               <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="AcercaDe.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="contenido">
+            <article>
+                <p>Esta es mi maquetacion.</p>
+            </article>
+        </section>
+
+        <aside>
+            <img src="Ps5.pro.jpeg" alt="Imagen de una ps5">
+        </aside>
+
+        <footer>
+            <h2>Miguel Hiciano © Derechos Reservados.</h2>
+        </footer>
+    </div>
+</body>
+</html>

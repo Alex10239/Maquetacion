@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación Web</title>
+    <style>
+  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #444;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        #contenedor {
+            width: 960px;
+            margin: 20px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #222;
+            padding: 20px;
+        }
+
+        header {
+            height: 150px;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        ul.menu {
+            list-style: none;
+        }
+
+        ul.menu li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            background: #333;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        ul.menu li a:hover {
+            background: #ef8354;
+        }
+
+        #contenido {
+            width: 700px;
+            height: 500px;
+            float: left;
+            background: blue;
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #contenido p {
+            font-size: 20px;
+        }
+
+        aside {
+            width: 250px;
+            height: 500px;
+            background: green;
+            float: right;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        aside img {
+            width: 100%;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding: 15px;
+            background: #333;
+            border-radius: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+      
+        footer {
+            background: #000;
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        footer h2 {
+            font-size: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Maquetación Web</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="AcercaDe.html">Acerca De</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="contenido">
+            <p>Estos son los Productos.</p>
+        </div>
+        <aside>
+            <p>Barra lateral</p>
+            <img src="ps1..jpeg" alt="Imagen de ps1">
+        </aside>
+        <div class="image-continer">
+            <img src="ps2..jpeg" alt="Imagen de ps2">
+            <img src="ps3..jpeg" alt="Imagen de ps3">
+            <img src="ps4..jpeg" alt="Imagen de ps4">
+            <img src="ps5.slim.jpeg" alt="Imagen 4">
+        </div>
+        <footer>
+            <h2>Pie de página</h2>
+        </footer>
+    </div>
+</body>
+</html>
